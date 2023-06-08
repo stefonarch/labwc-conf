@@ -63,7 +63,7 @@ lxqt_translate_ts(QM_FILES
 # install a desktop entry file
 lxqt_translate_desktop(DESKTOP_FILES
     TRANSLATION_DIR "translations"
-    SOURCES obconf-qt.desktop.in
+    SOURCES labwc-conf.desktop.in
     USE_YAML
 )
 install(FILES ${DESKTOP_FILES} DESTINATION share/applications)

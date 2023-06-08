@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec="env QT_QPA_PLATFORM=xcb labwc-conf"
+Exec=env QT_QPA_PLATFORM=xcb labwc-conf
 Categories=Qt;Settings;DesktopSettings;
 Icon=obconf-qt
 StartupNotify=true

@@ -22,11 +22,6 @@
         <translation>マウス</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="14"/>
-        <source>Window Manager Preferences</source>
-        <translation>ウィンドウマネージャーの設定</translation>
-    </message>
-    <message>
         <location filename="../obconf.ui" line="26"/>
         <source>Theme</source>
         <translation>テーマ</translation>
@@ -43,7 +38,7 @@
     </message>
     <message>
         <location filename="../obconf.ui" line="41"/>
-        <location filename="../obconf.ui" line="102"/>
+        <location filename="../obconf.ui" line="97"/>
         <source>Windows</source>
         <translation>ウィンドウ</translation>
     </message>
@@ -63,191 +58,186 @@
         <translation>余白</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="66"/>
-        <source>Dock</source>
-        <translation>ドック</translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="125"/>
+        <location filename="../obconf.ui" line="120"/>
         <source>Window Titles</source>
         <translation>ウィンドウのタイトル</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="131"/>
+        <location filename="../obconf.ui" line="126"/>
         <source>Button order:</source>
         <translation>ボタンの並び順:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="427"/>
+        <location filename="../obconf.ui" line="371"/>
         <source>Moving and Resizing Windows</source>
         <translation>ウィンドウの移動とサイズ変更</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="530"/>
+        <location filename="../obconf.ui" line="474"/>
         <source>Information Dialog</source>
         <translation>情報ダイアログ</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="689"/>
+        <location filename="../obconf.ui" line="633"/>
         <source>Focusing Windows</source>
         <translation>ウィンドウのフォーカス</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="698"/>
+        <location filename="../obconf.ui" line="642"/>
         <source>Focus windows when the mouse pointer moves over them</source>
         <translation>マウスポインターが入った時、そのウィンドウをフォーカスする</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="756"/>
+        <location filename="../obconf.ui" line="700"/>
         <source>Titlebar</source>
         <translation>タイトルバー</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="893"/>
+        <location filename="../obconf.ui" line="837"/>
         <source>Desktop Margins</source>
         <translation>デスクトップの余白</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="899"/>
+        <location filename="../obconf.ui" line="843"/>
         <source>Desktop margins are reserved areas on the edge of your screen.  New windows will not be placed within a margin, and maximized windows will not cover them.</source>
         <translation>デスクトップの余白とは、画面の端に予約された領域のことです。新規ウィンドウは余白の上に置かれることはなく、最大化されたウィンドウがそこに被さる事はありません。</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="909"/>
+        <location filename="../obconf.ui" line="853"/>
         <source>Left:</source>
         <translation>左:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="923"/>
-        <location filename="../obconf.ui" line="944"/>
-        <location filename="../obconf.ui" line="965"/>
-        <location filename="../obconf.ui" line="986"/>
+        <location filename="../obconf.ui" line="867"/>
+        <location filename="../obconf.ui" line="888"/>
+        <location filename="../obconf.ui" line="909"/>
+        <location filename="../obconf.ui" line="930"/>
         <source>px</source>
         <translation>ピクセル</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="930"/>
+        <location filename="../obconf.ui" line="874"/>
         <source>Top:</source>
         <translation>上:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="951"/>
+        <location filename="../obconf.ui" line="895"/>
         <source>Right:</source>
         <translation>右:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="972"/>
+        <location filename="../obconf.ui" line="916"/>
         <source>Bottom:</source>
         <translation>下:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="317"/>
+        <location filename="../obconf.ui" line="261"/>
         <source>All monitors</source>
         <translation>すべてのモニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="322"/>
+        <location filename="../obconf.ui" line="266"/>
         <source>The active monitor</source>
         <translation>アクティブなモニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="327"/>
+        <location filename="../obconf.ui" line="271"/>
         <source>The monitor with the mouse</source>
         <translation>マウスのあるモニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="342"/>
+        <location filename="../obconf.ui" line="286"/>
         <source>Primary Monitor</source>
         <translation>主モニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="348"/>
+        <location filename="../obconf.ui" line="292"/>
         <source>The primary monitor is where Openbox will place dialogs, such as the one used for cycling windows.</source>
         <translation>主モニターとは 例えばウィンドウの循環をさせる際のダイアログなどを Openbox が配置するモニターです。</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="369"/>
+        <location filename="../obconf.ui" line="313"/>
         <source>Fixed Monitor</source>
         <translation>固定モニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="374"/>
+        <location filename="../obconf.ui" line="318"/>
         <source>Active Monitor</source>
         <translation>アクティブなモニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="379"/>
+        <location filename="../obconf.ui" line="323"/>
         <source>Monitor With Mouse Pointer</source>
         <translation>マウスポインターのあるモニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="537"/>
-        <location filename="../obconf.ui" line="566"/>
+        <location filename="../obconf.ui" line="481"/>
+        <location filename="../obconf.ui" line="510"/>
         <source>Centered</source>
         <translation>中央</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="542"/>
+        <location filename="../obconf.ui" line="486"/>
         <source>From left edge</source>
         <translation>左端から</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="547"/>
+        <location filename="../obconf.ui" line="491"/>
         <source>From right edge</source>
         <translation>右端から</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="571"/>
+        <location filename="../obconf.ui" line="515"/>
         <source>From top edge</source>
         <translation>上端から</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="576"/>
+        <location filename="../obconf.ui" line="520"/>
         <source>From bottom edge</source>
         <translation>下端から</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="629"/>
+        <location filename="../obconf.ui" line="573"/>
         <source>When resizing terminal windows</source>
         <translation>端末ウィンドウをサイズ変更するとき</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="634"/>
+        <location filename="../obconf.ui" line="578"/>
         <source>Always</source>
         <translation>常に</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="639"/>
+        <location filename="../obconf.ui" line="583"/>
         <source>Never</source>
         <translation>しない</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="648"/>
+        <location filename="../obconf.ui" line="592"/>
         <source>Centered on the window</source>
         <translation>ウィンドウの中央</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="653"/>
+        <location filename="../obconf.ui" line="597"/>
         <source>Above the window</source>
         <translation>ウィンドウの上</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="658"/>
+        <location filename="../obconf.ui" line="602"/>
         <source>Fixed position on screen</source>
         <translation>画面の固定位置</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="773"/>
+        <location filename="../obconf.ui" line="717"/>
         <source>Maximizes the window</source>
         <translation>ウィンドウを最大化する</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="778"/>
+        <location filename="../obconf.ui" line="722"/>
         <source>Shades the window</source>
         <translation>ウィンドウを巻き上げる</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="141"/>
+        <location filename="../obconf.ui" line="136"/>
         <source>N: Window icon
 L: Window label (Title)
 I: Iconify (Minimize)
@@ -264,322 +254,312 @@ S: シェード化 (巻き上げる)
 D: すべてのデスクトップに表示</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="332"/>
+        <location filename="../obconf.ui" line="14"/>
+        <source>Labwc Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../obconf.ui" line="172"/>
+        <source>&amp;Window title: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../obconf.ui" line="206"/>
+        <source>&amp;On-screen display: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../obconf.ui" line="276"/>
         <source>Primary monitor</source>
         <translation>主モニター</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1013"/>
+        <location filename="../obconf.ui" line="957"/>
         <source>The dock is a special container for &quot;dockapps&quot;, or dock applications.  It is not visible on screen until a dockapp is run.  Dockapps can be used to show things like a clock, or to provide you with a system tray.</source>
         <translation>ドックは &quot;dockapps&quot; やドック用アプリケーションのためのコンテナです。それは dockapp を実行するまで画面に表示されません。Dockapps には時計ような物をおいたり、システムトレイのように使うことが出来ます。</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1029"/>
+        <location filename="../obconf.ui" line="973"/>
         <source>Position</source>
         <translation>位置</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1041"/>
+        <location filename="../obconf.ui" line="985"/>
         <source>&amp;Position:</source>
         <translation>位置(&amp;P):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1055"/>
+        <location filename="../obconf.ui" line="999"/>
         <source>Top Left</source>
         <translation>左上</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1060"/>
+        <location filename="../obconf.ui" line="1004"/>
         <source>Top</source>
         <translation>上</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1065"/>
+        <location filename="../obconf.ui" line="1009"/>
         <source>Top Right</source>
         <translation>右上</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1070"/>
+        <location filename="../obconf.ui" line="1014"/>
         <source>Left</source>
         <translation>左</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1075"/>
+        <location filename="../obconf.ui" line="1019"/>
         <source>Right</source>
         <translation>右</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1080"/>
+        <location filename="../obconf.ui" line="1024"/>
         <source>Bottom Left</source>
         <translation>左下</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1085"/>
+        <location filename="../obconf.ui" line="1029"/>
         <source>Bottom</source>
         <translation>下</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1090"/>
+        <location filename="../obconf.ui" line="1034"/>
         <source>Bottom Right</source>
         <translation>右下</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1095"/>
+        <location filename="../obconf.ui" line="1039"/>
         <source>Floating</source>
         <translation>フローティング（固定しない）</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1109"/>
+        <location filename="../obconf.ui" line="1053"/>
         <source>&amp;Floating position:</source>
         <translation>フローティングの位置(&amp;F):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1134"/>
+        <location filename="../obconf.ui" line="1078"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1150"/>
+        <location filename="../obconf.ui" line="1094"/>
         <source>Allow &amp;windows to be placed within the dock&apos;s area</source>
         <translation>ウィンドウをドックエリアに配置することを可能にする(&amp;W)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1157"/>
+        <location filename="../obconf.ui" line="1101"/>
         <source>&amp;Orientation: </source>
         <translation>方向(&amp;O): </translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1171"/>
+        <location filename="../obconf.ui" line="1115"/>
         <source>Vertical</source>
         <translation>縦</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1176"/>
+        <location filename="../obconf.ui" line="1120"/>
         <source>Horizontal</source>
         <translation>横</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1187"/>
+        <location filename="../obconf.ui" line="1131"/>
         <source>Stacking</source>
         <translation>重ねあわせ</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1193"/>
+        <location filename="../obconf.ui" line="1137"/>
         <source>Keep dock &amp;above other windows</source>
         <translation>ドックを常に他のウィンドウの前面に配置する(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1200"/>
+        <location filename="../obconf.ui" line="1144"/>
         <source>A&amp;llow dock to be both above and below windows</source>
         <translation>ドックを他のウィンドウの前面にも背面にも配置することを可能にする(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1207"/>
+        <location filename="../obconf.ui" line="1151"/>
         <source>Keep dock &amp;below other windows</source>
         <translation>ドックを常に他のウィンドウの背面に配置する(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1217"/>
+        <location filename="../obconf.ui" line="1161"/>
         <source>Hiding</source>
         <translation>非表示</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1223"/>
+        <location filename="../obconf.ui" line="1167"/>
         <source>&amp;Delay before hiding:</source>
         <translation>隠れるまでの時間(&amp;D):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1233"/>
+        <location filename="../obconf.ui" line="1177"/>
         <source>Delay before &amp;showing:</source>
         <translation>出現するまでの時間(&amp;S):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1263"/>
+        <location filename="../obconf.ui" line="1207"/>
         <source>&amp;Hide off screen</source>
         <translation>画面から隠す(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1294"/>
+        <location filename="../obconf.ui" line="1238"/>
         <source>About</source>
         <translation>このアプリケーションについて</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="84"/>
+        <location filename="../obconf.ui" line="79"/>
         <source>&amp;Install a new theme...</source>
         <translation>新規テーマのインストール(&amp;I)...</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="91"/>
+        <location filename="../obconf.ui" line="86"/>
         <source>Create a theme &amp;archive (.obt)...</source>
         <translation>テーマアーカイブ(.obt)の作成(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="108"/>
+        <location filename="../obconf.ui" line="103"/>
         <source>&amp;Windows retain a border when undecorated</source>
         <translation>ウィンドウ装飾が外されても枠は維持する(&amp;W)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="115"/>
+        <location filename="../obconf.ui" line="110"/>
         <source>A&amp;nimate iconify and restore</source>
         <translation>アイコン化と復帰をアニメーションする(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="219"/>
-        <source>&amp;Active window title: </source>
-        <translation>アクティブなウィンドウのタイトル(&amp;A): </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="229"/>
-        <source>&amp;Inactive window title: </source>
-        <translation>非アクティブなウィンドウのタイトル(&amp;I): </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="239"/>
-        <source>Menu &amp;header: </source>
-        <translation>メニューのヘッダー(&amp;H): </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="249"/>
+        <location filename="../obconf.ui" line="189"/>
         <source>&amp;Menu Item: </source>
         <translation>メニューのアイテム(&amp;M): </translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="259"/>
-        <source>Active &amp;On-screen display: </source>
-        <translation>オンスクリーンディスプレイ内のアクティブ(&amp;O): </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="269"/>
-        <source>Inactive O&amp;n-screen display: </source>
-        <translation>オンスクリーンディスプレイ内の非アクティブ(&amp;N): </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="283"/>
+        <location filename="../obconf.ui" line="227"/>
         <source>Focus &amp;new windows when they appear</source>
         <translation>新規ウィンドウが現れた時それをフォーカスする(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="290"/>
+        <location filename="../obconf.ui" line="234"/>
         <source>&amp;Place new windows under the mouse pointer</source>
         <translation>新規ウィンドウはマウスポインターの下に配置する(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="297"/>
+        <location filename="../obconf.ui" line="241"/>
         <source>&amp;Center new windows when they are placed</source>
         <translation>新規ウィンドウは中央に配置する(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="306"/>
+        <location filename="../obconf.ui" line="250"/>
         <source>Prefer to place new windows &amp;on:</source>
         <translation>新規ウィンドウの配置設定(&amp;O):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="358"/>
+        <location filename="../obconf.ui" line="302"/>
         <source>Primary &amp;monitor:</source>
         <translation>主モニター(&amp;M):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="387"/>
+        <location filename="../obconf.ui" line="331"/>
         <source>&amp;Fixed monitor:</source>
         <translation>固定モニター(&amp;F):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="433"/>
+        <location filename="../obconf.ui" line="377"/>
         <source>Update the window contents while &amp;resizing</source>
         <translation>サイズ変更中もウィンドウの表示内容を更新する(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="440"/>
+        <location filename="../obconf.ui" line="384"/>
         <source>Drag &amp;threshold distance:</source>
         <translation>ドラッグの閾値となる距離(&amp;T):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="460"/>
+        <location filename="../obconf.ui" line="404"/>
         <source>Amount of resistance against other &amp;windows:</source>
         <translation>他のウィンドウに接した時の抵抗の量(&amp;W):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="480"/>
+        <location filename="../obconf.ui" line="424"/>
         <source>Amount of resistance against screen &amp;edges:</source>
         <translation>画面端に接した時の抵抗の量(&amp;E):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="500"/>
+        <location filename="../obconf.ui" line="444"/>
         <source>&amp;Amount of time to wait before switching:</source>
         <translation>デスクトップを切り替えるまでの待機時間(&amp;A):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="520"/>
+        <location filename="../obconf.ui" line="464"/>
         <source>&amp;Switch desktops when moving a window past the screen edge</source>
         <translation>ウィンドウを画面端の先へ動かそうとした時デスクトップを切り替える(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="555"/>
+        <location filename="../obconf.ui" line="499"/>
         <source>Fixed &amp;y position:</source>
         <translation>固定の Y 位置(&amp;Y):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="584"/>
+        <location filename="../obconf.ui" line="528"/>
         <source>Information dialog&apos;s &amp;position:</source>
         <translation>情報ダイアログの位置(&amp;P):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="594"/>
+        <location filename="../obconf.ui" line="538"/>
         <source>Fixed &amp;x position:</source>
         <translation>固定の X 位置(&amp;X):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="604"/>
+        <location filename="../obconf.ui" line="548"/>
         <source>Show &amp;information dialog:</source>
         <translation>情報ダイアログの表示(&amp;I):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="710"/>
+        <location filename="../obconf.ui" line="654"/>
         <source>&amp;Delay before focusing and raising windows:</source>
         <translation>ウィンドウをフォーカスし前面に出すまでの遅延(&amp;D):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="730"/>
+        <location filename="../obconf.ui" line="674"/>
         <source>Move focus under the mouse when &amp;switching desktops</source>
         <translation>デスクトップを切り替える際にマウスの下にあるウィンドウへフォーカスを移す(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="737"/>
+        <location filename="../obconf.ui" line="681"/>
         <source>Move focus &amp;under the mouse when the mouse is not moving</source>
         <translation>マウスが動いていない時もそこへフォーカスを移す(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="744"/>
+        <location filename="../obconf.ui" line="688"/>
         <source>&amp;Raise windows when the mouse pointer moves over them</source>
         <translation>マウスポインターが入ったウィンドウを前面に出す(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="762"/>
+        <location filename="../obconf.ui" line="706"/>
         <source>Double click on the &amp;titlebar:</source>
         <translation>タイトルバー上のダブルクリック(&amp;T):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="786"/>
+        <location filename="../obconf.ui" line="730"/>
         <source>Double click ti&amp;me:</source>
         <translation>ダブルクリックの時間(&amp;M):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="826"/>
+        <location filename="../obconf.ui" line="770"/>
         <source>&amp;Show a notification when switching desktops</source>
         <translation>デスクトップ切り替え時に通知を表示する(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="833"/>
+        <location filename="../obconf.ui" line="777"/>
         <source>&amp;Amount of time to show the notification for:</source>
         <translation>通知を表示する時間の長さ(&amp;A):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="856"/>
+        <location filename="../obconf.ui" line="800"/>
         <source>&amp;Number of desktops: </source>
         <translation>デスクトップの数(&amp;N): </translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="879"/>
+        <location filename="../obconf.ui" line="823"/>
         <source>&amp;Desktop names:</source>
         <translation>デスクトップの名前(&amp;D):</translation>
     </message>
@@ -599,15 +579,20 @@ D: すべてのデスクトップに表示</translation>
         <translation>(無題のデスクトップ)</translation>
     </message>
     <message>
+        <location filename="../theme.cpp" line="149"/>
+        <source>Choose an Openbox theme</source>
+        <translation>Openbox テーマの選択</translation>
+    </message>
+    <message>
         <location filename="../maindialog.cpp" line="78"/>
-        <source>About ObConf-Qt</source>
-        <translation>ObConf-Qt について</translation>
+        <source>About Labwc-conf</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../maindialog.cpp" line="79"/>
-        <source>A preferences manager for Openbox
+        <source>A preferences manager for Labwc
 
-Copyright (c) 2014-2015
+Copyright (c) 2014-2023
 
 Authors:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
@@ -616,22 +601,7 @@ The program is based on ObConf developed by the following developers.
 * Dana Jansens &lt;danakj@orodu.net&gt;
 * Tim Riley &lt;tr@slackzone.org&gt;
 * Javeed Shaikh &lt;syscrash2k@gmail.com&gt;</source>
-        <translation>Openbox の設定マネージャー
-
-Copyright (c) 2014-2015
-
-作者:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-
-このプログラムは下記の開発者によって開発された ObConf を基に開発されています。
-* Dana Jansens &lt;danakj@orodu.net&gt;
-* Tim Riley &lt;tr@slackzone.org&gt;
-* Javeed Shaikh &lt;syscrash2k@gmail.com&gt;</translation>
-    </message>
-    <message>
-        <location filename="../theme.cpp" line="149"/>
-        <source>Choose an Openbox theme</source>
-        <translation>Openbox テーマの選択</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -688,12 +658,12 @@ The following errors were reported:
 %3</translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="53"/>
+        <location filename="../labwc-conf.cpp" line="53"/>
         <source>ObConf Error</source>
         <translation>ObConf エラー</translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="73"/>
+        <location filename="../labwc-conf.cpp" line="73"/>
         <source>Syntax: obconf [options] [ARCHIVE.obt]
 
 Options:
@@ -714,48 +684,46 @@ Options:
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="97"/>
+        <location filename="../labwc-conf.cpp" line="97"/>
         <source>--install requires an argument
 </source>
         <translation>--install には引数が必要です
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="103"/>
+        <location filename="../labwc-conf.cpp" line="103"/>
         <source>--archive requires an argument
 </source>
         <translation>--archive には引数が必要です
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="109"/>
+        <location filename="../labwc-conf.cpp" line="109"/>
         <source>--config-file requires an argument
 </source>
         <translation>--config-file には引数が必要です
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="223"/>
-        <location filename="../obconf-qt.cpp" line="238"/>
+        <location filename="../labwc-conf.cpp" line="223"/>
+        <location filename="../labwc-conf.cpp" line="238"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="224"/>
-        <source>Failed to load an rc.xml. You have probably failed to install Openbox properly.</source>
-        <translation>rc.xml の読み込みに失敗しました。おそらくは Openbox のインストールが適切でありません。</translation>
+        <location filename="../labwc-conf.cpp" line="224"/>
+        <source>Failed to load an rc.xml. You have probably failed to install labwc properly.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="236"/>
-        <source>Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.
+        <location filename="../labwc-conf.cpp" line="236"/>
+        <source>Error while parsing the labwc configuration file.  Your configuration file is not valid XML.
 
 Message: %1</source>
-        <translation>Openbox 設定ファイルのパースエラーです。その設定ファイルは有効な XML ではありません。
-
-メッセージ: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="58"/>
+        <location filename="../labwc-conf.cpp" line="58"/>
         <source>Copyright (c) 2003-2008   Dana Jansens
 Copyright (c) 2003        Tim Riley
 Copyright (c) 2007        Javeed Shaikh
