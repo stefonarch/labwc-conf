@@ -20,7 +20,7 @@
 #include <QMessageBox>
 
 #include "tree.h"
-#include "obconf-qt.h"
+#include "labwc-conf.h"
 
 #include <obt/xml.h>
 #include <X11/Xlib.h>

@@ -1,3 +1,3 @@
-project(obconf-qt)
+project(labwc-conf)
 
-build_component("." "${CMAKE_INSTALL_FULL_DATADIR}/obconf-qt/translations")
+build_component("." "${CMAKE_INSTALL_FULL_DATADIR}/labwc-conf/translations")

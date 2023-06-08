@@ -24,7 +24,7 @@
 #include <QItemSelection>
 #include <QFileDialog>
 
-#include "obconf-qt.h"
+#include "labwc-conf.h"
 #include "tree.h"
 #include "preview_update.h"
 #include "archive.h"
@@ -71,7 +71,7 @@ void MainDialog::theme_load_all() {
 
   add_theme_dir(THEME_DIR);
   themes = g_list_sort(themes, (GCompareFunc) strcasecmp);
-  
+
   themes_model->clear();
 
   /* return to regular scheduled programming */

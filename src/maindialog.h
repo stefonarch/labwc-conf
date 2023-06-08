@@ -52,18 +52,18 @@ private:
   void moveresize_setup_tab();
   void margins_setup_tab();
   void desktops_setup_tab();
-  void dock_setup_tab();
+  void dock_setup_tab();  // remove
 
   // theme
   void add_theme_dir(const char* dirname);
 
   // windows
   void windows_enable_stuff();
-  
+
   // move & resize
   void moveresize_enable_stuff();
   void write_fixed_position(const char* coord);
-  
+
   // mouse
   void mouse_enable_stuff();
   int read_doubleclick_action();
@@ -109,7 +109,7 @@ private Q_SLOTS:
   void on_resist_window_valueChanged(int newValue);
   void on_resist_edge_valueChanged(int newValue);
   void on_resize_contents_toggled(bool checked);
-  
+
   void on_resize_popup_currentIndexChanged(int index);
   void on_resize_position_currentIndexChanged(int index);
   void on_fixed_x_popup_currentIndexChanged(int index);
@@ -143,7 +143,7 @@ private Q_SLOTS:
   void on_desktop_popup_time_valueChanged(int newValue);
   void on_desktop_names_itemChanged(QListWidgetItem * item);
 
-  // docks
+  // docks (to remove)
   void on_dock_float_x_valueChanged(int newValue);
   void on_dock_float_y_valueChanged(int newValue);
   void on_dock_stack_top_toggled(bool checked);

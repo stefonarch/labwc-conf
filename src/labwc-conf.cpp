@@ -30,7 +30,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
 
-#include "obconf-qt.h"
+#include "labwc-conf.h"
 #include "archive.h"
 #include "preview_update.h"
 #include <stdlib.h>
@@ -233,7 +233,7 @@ int main(int argc, char** argv) {
     xmlErrorPtr e = xmlGetLastError();
 
     if(e) {
-      QString message = QObject::tr("Error while parsing the lawwc configuration file.  Your configuration file is not valid XML.\n\nMessage: %1")
+      QString message = QObject::tr("Error while parsing the labwc configuration file.  Your configuration file is not valid XML.\n\nMessage: %1")
         .arg(QString::fromUtf8(e->message));
       QMessageBox::critical(NULL, QObject::tr("Error"), message);
     }

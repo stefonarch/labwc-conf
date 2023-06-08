@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 # The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
 # command to specify that the current project code is written for the given range of CMake
 # versions.
-project(obconf-qt)
+project(labwc-conf)
 
 find_program(SED_PROGRAM sed)
 
@@ -16,11 +16,11 @@ set(GLIB_MINIMUM_VERSION "2.50.0")
 set(LXQTBT_MINIMUM_VERSION "0.8.0")
 set(QT_MINIMUM_VERSION "5.12.0")
 
-set(OBCONFQT_MAJOR_VERSION 0)
-set(OBCONFQT_MINOR_VERSION 16)
-set(OBCONFQT_PATCH_VERSION 2)
-set(OBCONFQT_VERSION ${OBCONFQT_MAJOR_VERSION}.${OBCONFQT_MINOR_VERSION}.${OBCONFQT_PATCH_VERSION})
-add_definitions("-DOBCONFQT_VERSION=\"${OBCONFQT_VERSION}\"")
+set(labwcconf_MAJOR_VERSION 0)
+set(labwcconf_MINOR_VERSION 16)
+set(labwcconf_PATCH_VERSION 2)
+set(labwcconf_VERSION ${labwcconf_MAJOR_VERSION}.${labwcconf_MINOR_VERSION}.${labwcconf_PATCH_VERSION})
+add_definitions("-Dlabwcconf_VERSION=\"${labwcconf_VERSION}\"")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
@@ -51,6 +51,6 @@ add_subdirectory(src)
 
 # install an icon for the application
 install(
-  FILES data/obconf-qt.png
+  FILES data/labwc-conf.svg
   DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
 )

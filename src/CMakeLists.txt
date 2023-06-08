@@ -11,8 +11,8 @@ include_directories(
   ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-set(obconf-qt_SRCS
-  obconf-qt.cpp
+set(labwc-conf_SRCS
+  labwc-conf.cpp
   maindialog.cpp
   appearance.cpp
   windows.cpp
@@ -71,23 +71,23 @@ install(FILES ${DESKTOP_FILES} DESTINATION share/applications)
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
 
-add_executable(obconf-qt
-  ${obconf-qt_SRCS}
+add_executable(labwc-conf
+  ${labwc-conf_SRCS}
   ${obconf-qt_UI_H}
   ${QM_FILES}
   ${DESKTOP_FILES}
 )
 
 add_definitions(
-  -DPACKAGE_DATA_DIR="${CMAKE_INSTALL_FULL_DATAROOTDIR}/obconf-qt"
+  -DPACKAGE_DATA_DIR="${CMAKE_INSTALL_FULL_DATAROOTDIR}/labwc-conf"
   -DPIXMAPS_DIR="${CMAKE_INSTALL_FULL_DATAROOTDIR}/pixmaps"
   -DTHEME_DIR="${CMAKE_INSTALL_FULL_DATAROOTDIR}/openbox/themes"
 )
 
-target_link_libraries(obconf-qt
+target_link_libraries(labwc-conf
   ${QTX_LIBRARIES}
   ${GLIB_LIBRARIES}
   ${OPENBOX_LDFLAGS}
 )
 
-install(TARGETS obconf-qt RUNTIME DESTINATION bin)
+install(TARGETS labwc-conf RUNTIME DESTINATION bin)
