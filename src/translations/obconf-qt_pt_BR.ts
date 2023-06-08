@@ -22,11 +22,6 @@
         <translation>Mouse</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="14"/>
-        <source>Window Manager Preferences</source>
-        <translation>Preferências do gerenciador de janelas</translation>
-    </message>
-    <message>
         <location filename="../obconf.ui" line="26"/>
         <source>Theme</source>
         <translation>Tema</translation>
@@ -43,7 +38,7 @@
     </message>
     <message>
         <location filename="../obconf.ui" line="41"/>
-        <location filename="../obconf.ui" line="102"/>
+        <location filename="../obconf.ui" line="97"/>
         <source>Windows</source>
         <translation>Janelas</translation>
     </message>
@@ -63,191 +58,186 @@
         <translation>Margens</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="66"/>
-        <source>Dock</source>
-        <translation>Doca</translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="125"/>
+        <location filename="../obconf.ui" line="120"/>
         <source>Window Titles</source>
         <translation>Títulos das janelas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="131"/>
+        <location filename="../obconf.ui" line="126"/>
         <source>Button order:</source>
         <translation>Ordem dos botões:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="427"/>
+        <location filename="../obconf.ui" line="371"/>
         <source>Moving and Resizing Windows</source>
         <translation>Movendo e redimensionando janelas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="530"/>
+        <location filename="../obconf.ui" line="474"/>
         <source>Information Dialog</source>
         <translation>Caixas de Diálogo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="689"/>
+        <location filename="../obconf.ui" line="633"/>
         <source>Focusing Windows</source>
         <translation>Foco em janelas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="698"/>
+        <location filename="../obconf.ui" line="642"/>
         <source>Focus windows when the mouse pointer moves over them</source>
         <translation>Focar quando o cursor mover sobre a janela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="756"/>
+        <location filename="../obconf.ui" line="700"/>
         <source>Titlebar</source>
         <translation>Barra de título</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="893"/>
+        <location filename="../obconf.ui" line="837"/>
         <source>Desktop Margins</source>
         <translation>Margens da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="899"/>
+        <location filename="../obconf.ui" line="843"/>
         <source>Desktop margins are reserved areas on the edge of your screen.  New windows will not be placed within a margin, and maximized windows will not cover them.</source>
         <translation>As margens da área de trabalho são áreas reservadas nos cantos da tela. Janelas novas não serão dispostas dentro da margem, assim como janelas maximizadas não as cobrirão.</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="909"/>
+        <location filename="../obconf.ui" line="853"/>
         <source>Left:</source>
         <translation>Esquerda:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="923"/>
-        <location filename="../obconf.ui" line="944"/>
-        <location filename="../obconf.ui" line="965"/>
-        <location filename="../obconf.ui" line="986"/>
+        <location filename="../obconf.ui" line="867"/>
+        <location filename="../obconf.ui" line="888"/>
+        <location filename="../obconf.ui" line="909"/>
+        <location filename="../obconf.ui" line="930"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="930"/>
+        <location filename="../obconf.ui" line="874"/>
         <source>Top:</source>
         <translation>Topo:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="951"/>
+        <location filename="../obconf.ui" line="895"/>
         <source>Right:</source>
         <translation>Direita:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="972"/>
+        <location filename="../obconf.ui" line="916"/>
         <source>Bottom:</source>
         <translation>Base:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="317"/>
+        <location filename="../obconf.ui" line="261"/>
         <source>All monitors</source>
         <translation>Todos os monitores</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="322"/>
+        <location filename="../obconf.ui" line="266"/>
         <source>The active monitor</source>
         <translation>O monitor ativo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="327"/>
+        <location filename="../obconf.ui" line="271"/>
         <source>The monitor with the mouse</source>
         <translation>O monitor com o mouse</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="342"/>
+        <location filename="../obconf.ui" line="286"/>
         <source>Primary Monitor</source>
         <translation>Monitor primário</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="348"/>
+        <location filename="../obconf.ui" line="292"/>
         <source>The primary monitor is where Openbox will place dialogs, such as the one used for cycling windows.</source>
         <translation>O monitor primário é onde o Openbox exibirá diálogos, tais como o diálogo para circular entre as janelas.</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="369"/>
+        <location filename="../obconf.ui" line="313"/>
         <source>Fixed Monitor</source>
         <translation>Monitor fixo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="374"/>
+        <location filename="../obconf.ui" line="318"/>
         <source>Active Monitor</source>
         <translation>Monitor ativo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="379"/>
+        <location filename="../obconf.ui" line="323"/>
         <source>Monitor With Mouse Pointer</source>
         <translation>Monitor com o cursor</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="537"/>
-        <location filename="../obconf.ui" line="566"/>
+        <location filename="../obconf.ui" line="481"/>
+        <location filename="../obconf.ui" line="510"/>
         <source>Centered</source>
         <translation>Centralizado</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="542"/>
+        <location filename="../obconf.ui" line="486"/>
         <source>From left edge</source>
         <translation>Do canto esquerdo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="547"/>
+        <location filename="../obconf.ui" line="491"/>
         <source>From right edge</source>
         <translation>Do canto direito</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="571"/>
+        <location filename="../obconf.ui" line="515"/>
         <source>From top edge</source>
         <translation>Do topo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="576"/>
+        <location filename="../obconf.ui" line="520"/>
         <source>From bottom edge</source>
         <translation>Da base</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="629"/>
+        <location filename="../obconf.ui" line="573"/>
         <source>When resizing terminal windows</source>
         <translation>Ao redimensionar janelas de terminal</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="634"/>
+        <location filename="../obconf.ui" line="578"/>
         <source>Always</source>
         <translation>Sempre</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="639"/>
+        <location filename="../obconf.ui" line="583"/>
         <source>Never</source>
         <translation>Nunca</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="648"/>
+        <location filename="../obconf.ui" line="592"/>
         <source>Centered on the window</source>
         <translation>Centralizado na janela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="653"/>
+        <location filename="../obconf.ui" line="597"/>
         <source>Above the window</source>
         <translation>Acima da janela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="658"/>
+        <location filename="../obconf.ui" line="602"/>
         <source>Fixed position on screen</source>
         <translation>Posição fixa na tela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="773"/>
+        <location filename="../obconf.ui" line="717"/>
         <source>Maximizes the window</source>
         <translation>Maximiza a janela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="778"/>
+        <location filename="../obconf.ui" line="722"/>
         <source>Shades the window</source>
         <translation>Sombrear a janela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="141"/>
+        <location filename="../obconf.ui" line="136"/>
         <source>N: Window icon
 L: Window label (Title)
 I: Iconify (Minimize)
@@ -264,322 +254,312 @@ S: Sombra (enrolar)
 D: onipresente (todas as áreas de trabalho)</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="332"/>
+        <location filename="../obconf.ui" line="14"/>
+        <source>Labwc Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../obconf.ui" line="172"/>
+        <source>&amp;Window title: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../obconf.ui" line="206"/>
+        <source>&amp;On-screen display: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../obconf.ui" line="276"/>
         <source>Primary monitor</source>
         <translation>Monitor primário</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1013"/>
+        <location filename="../obconf.ui" line="957"/>
         <source>The dock is a special container for &quot;dockapps&quot;, or dock applications.  It is not visible on screen until a dockapp is run.  Dockapps can be used to show things like a clock, or to provide you with a system tray.</source>
         <translation>O dock é um contêiner especial para os &quot;dockapps&quot; ou aplicativos de dock. Não é visível na tela até que um dockapp seja executado. Dockapps podem ser usados para mostrar coisas como um relógio ou para fornecer uma bandeja do sistema.</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1029"/>
+        <location filename="../obconf.ui" line="973"/>
         <source>Position</source>
         <translation>Posição</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1041"/>
+        <location filename="../obconf.ui" line="985"/>
         <source>&amp;Position:</source>
         <translation>&amp;Posição:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1055"/>
+        <location filename="../obconf.ui" line="999"/>
         <source>Top Left</source>
         <translation>Superior Esquerda</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1060"/>
+        <location filename="../obconf.ui" line="1004"/>
         <source>Top</source>
         <translation>Topo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1065"/>
+        <location filename="../obconf.ui" line="1009"/>
         <source>Top Right</source>
         <translation>Superior Direito</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1070"/>
+        <location filename="../obconf.ui" line="1014"/>
         <source>Left</source>
         <translation>Esquerda</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1075"/>
+        <location filename="../obconf.ui" line="1019"/>
         <source>Right</source>
         <translation>Direita</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1080"/>
+        <location filename="../obconf.ui" line="1024"/>
         <source>Bottom Left</source>
         <translation>Inferior Esquerdo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1085"/>
+        <location filename="../obconf.ui" line="1029"/>
         <source>Bottom</source>
         <translation>Inferior</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1090"/>
+        <location filename="../obconf.ui" line="1034"/>
         <source>Bottom Right</source>
         <translation>Inferior Direito</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1095"/>
+        <location filename="../obconf.ui" line="1039"/>
         <source>Floating</source>
         <translation>Flutuante</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1109"/>
+        <location filename="../obconf.ui" line="1053"/>
         <source>&amp;Floating position:</source>
         <translation>&amp;Posicionamento flutuante:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1134"/>
+        <location filename="../obconf.ui" line="1078"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1150"/>
+        <location filename="../obconf.ui" line="1094"/>
         <source>Allow &amp;windows to be placed within the dock&apos;s area</source>
         <translation>Permitir que janelas sejam colocadas dentro da área do dock</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1157"/>
+        <location filename="../obconf.ui" line="1101"/>
         <source>&amp;Orientation: </source>
         <translation>&amp;Orientação: </translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1171"/>
+        <location filename="../obconf.ui" line="1115"/>
         <source>Vertical</source>
         <translation>Vertical</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1176"/>
+        <location filename="../obconf.ui" line="1120"/>
         <source>Horizontal</source>
         <translation>Horizontal</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1187"/>
+        <location filename="../obconf.ui" line="1131"/>
         <source>Stacking</source>
         <translation>Empilhado</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1193"/>
+        <location filename="../obconf.ui" line="1137"/>
         <source>Keep dock &amp;above other windows</source>
         <translation>Manter o dock &amp;acima de outras janelas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1200"/>
+        <location filename="../obconf.ui" line="1144"/>
         <source>A&amp;llow dock to be both above and below windows</source>
         <translation>Permitir que o dock fique acima e abaixo das janelas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1207"/>
+        <location filename="../obconf.ui" line="1151"/>
         <source>Keep dock &amp;below other windows</source>
         <translation>Manter o dock &amp;abaixo das outras janelas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1217"/>
+        <location filename="../obconf.ui" line="1161"/>
         <source>Hiding</source>
         <translation>Ocultação</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1223"/>
+        <location filename="../obconf.ui" line="1167"/>
         <source>&amp;Delay before hiding:</source>
         <translation>&amp;Atraso antes da ocultação:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1233"/>
+        <location filename="../obconf.ui" line="1177"/>
         <source>Delay before &amp;showing:</source>
         <translation>Atraso antes de &amp;mostrar:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1263"/>
+        <location filename="../obconf.ui" line="1207"/>
         <source>&amp;Hide off screen</source>
         <translation>&amp;Ocultar a tela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="1294"/>
+        <location filename="../obconf.ui" line="1238"/>
         <source>About</source>
         <translation>Sobre</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="84"/>
+        <location filename="../obconf.ui" line="79"/>
         <source>&amp;Install a new theme...</source>
         <translation>&amp;Instalar um novo tema...</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="91"/>
+        <location filename="../obconf.ui" line="86"/>
         <source>Create a theme &amp;archive (.obt)...</source>
         <translation>Criar um &amp;arquivo de tema (.obt)...</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="108"/>
+        <location filename="../obconf.ui" line="103"/>
         <source>&amp;Windows retain a border when undecorated</source>
         <translation>&amp;Janelas mantém uma borda quando não decoradas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="115"/>
+        <location filename="../obconf.ui" line="110"/>
         <source>A&amp;nimate iconify and restore</source>
         <translation>A&amp;nimações para minimizar e restaurar</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="219"/>
-        <source>&amp;Active window title: </source>
-        <translation>&amp;Título da janela ativa: </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="229"/>
-        <source>&amp;Inactive window title: </source>
-        <translation>&amp;Título da janela inativa: </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="239"/>
-        <source>Menu &amp;header: </source>
-        <translation>Cabeçalho do menu: </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="249"/>
+        <location filename="../obconf.ui" line="189"/>
         <source>&amp;Menu Item: </source>
         <translation>Item do menu: </translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="259"/>
-        <source>Active &amp;On-screen display: </source>
-        <translation>Exibição na tela ativa: </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="269"/>
-        <source>Inactive O&amp;n-screen display: </source>
-        <translation>Exibição na tela inativa: </translation>
-    </message>
-    <message>
-        <location filename="../obconf.ui" line="283"/>
+        <location filename="../obconf.ui" line="227"/>
         <source>Focus &amp;new windows when they appear</source>
         <translation>Focar em novas janelas quando elas aparecerem</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="290"/>
+        <location filename="../obconf.ui" line="234"/>
         <source>&amp;Place new windows under the mouse pointer</source>
         <translation>&amp;Colocar novas janelas abaixo do cursor do mouse</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="297"/>
+        <location filename="../obconf.ui" line="241"/>
         <source>&amp;Center new windows when they are placed</source>
         <translation>&amp;Centralizar novas janelas quando elas são abertas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="306"/>
+        <location filename="../obconf.ui" line="250"/>
         <source>Prefer to place new windows &amp;on:</source>
         <translation>Colocar novas janelas &amp;em:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="358"/>
+        <location filename="../obconf.ui" line="302"/>
         <source>Primary &amp;monitor:</source>
         <translation>Monitor primário:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="387"/>
+        <location filename="../obconf.ui" line="331"/>
         <source>&amp;Fixed monitor:</source>
         <translation>Monitor &amp;fixo:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="433"/>
+        <location filename="../obconf.ui" line="377"/>
         <source>Update the window contents while &amp;resizing</source>
         <translation>Atualizar o conteúdo da janela em &amp;redimensionamentos</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="440"/>
+        <location filename="../obconf.ui" line="384"/>
         <source>Drag &amp;threshold distance:</source>
         <translation>Distância &amp;limite do arraste:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="460"/>
+        <location filename="../obconf.ui" line="404"/>
         <source>Amount of resistance against other &amp;windows:</source>
         <translation>Resistência contra outras janelas(&amp;w):</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="480"/>
+        <location filename="../obconf.ui" line="424"/>
         <source>Amount of resistance against screen &amp;edges:</source>
         <translation>R&amp;esistência contra as bordas da tela:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="500"/>
+        <location filename="../obconf.ui" line="444"/>
         <source>&amp;Amount of time to wait before switching:</source>
         <translation>Tempo de esper&amp;a antes de mudar:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="520"/>
+        <location filename="../obconf.ui" line="464"/>
         <source>&amp;Switch desktops when moving a window past the screen edge</source>
         <translation>Alternar área&amp;s de trabalho ao mover uma janela além da borda da tela</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="555"/>
+        <location filename="../obconf.ui" line="499"/>
         <source>Fixed &amp;y position:</source>
         <translation>Posição &amp;y:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="584"/>
+        <location filename="../obconf.ui" line="528"/>
         <source>Information dialog&apos;s &amp;position:</source>
         <translation>&amp;Posição do diálogo de informações:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="594"/>
+        <location filename="../obconf.ui" line="538"/>
         <source>Fixed &amp;x position:</source>
         <translation>Posição &amp;x:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="604"/>
+        <location filename="../obconf.ui" line="548"/>
         <source>Show &amp;information dialog:</source>
         <translation>Exibir diálogo de &amp;informação:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="710"/>
+        <location filename="../obconf.ui" line="654"/>
         <source>&amp;Delay before focusing and raising windows:</source>
         <translation>Atraso antes &amp;de focar e levantar janelas:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="730"/>
+        <location filename="../obconf.ui" line="674"/>
         <source>Move focus under the mouse when &amp;switching desktops</source>
         <translation>Muda o foco embaixo do cur&amp;sor ao alternar entre ás áreas de trabalho</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="737"/>
+        <location filename="../obconf.ui" line="681"/>
         <source>Move focus &amp;under the mouse when the mouse is not moving</source>
         <translation>M&amp;uda o foco embaixo do cursor quando o mesmo não estiver se movendo</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="744"/>
+        <location filename="../obconf.ui" line="688"/>
         <source>&amp;Raise windows when the mouse pointer moves over them</source>
         <translation>Sobe janelas quando o pontei&amp;ro do mouse se move sobre elas</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="762"/>
+        <location filename="../obconf.ui" line="706"/>
         <source>Double click on the &amp;titlebar:</source>
         <translation>Duplo-clique na barra de &amp;título:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="786"/>
+        <location filename="../obconf.ui" line="730"/>
         <source>Double click ti&amp;me:</source>
         <translation>Te&amp;mpo para duplo-clique:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="826"/>
+        <location filename="../obconf.ui" line="770"/>
         <source>&amp;Show a notification when switching desktops</source>
         <translation>Exibir uma notificação quando alternar entre área&amp;s de trabalho</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="833"/>
+        <location filename="../obconf.ui" line="777"/>
         <source>&amp;Amount of time to show the notification for:</source>
         <translation>Tempo p&amp;ara mostrar a notificação:</translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="856"/>
+        <location filename="../obconf.ui" line="800"/>
         <source>&amp;Number of desktops: </source>
         <translation>Número de áreas de trabalho: </translation>
     </message>
     <message>
-        <location filename="../obconf.ui" line="879"/>
+        <location filename="../obconf.ui" line="823"/>
         <source>&amp;Desktop names:</source>
         <translation>Nome das áreas de trabalho:</translation>
     </message>
@@ -599,15 +579,20 @@ D: onipresente (todas as áreas de trabalho)</translation>
         <translation>(Área de trabalho sem nome)</translation>
     </message>
     <message>
+        <location filename="../theme.cpp" line="149"/>
+        <source>Choose an Openbox theme</source>
+        <translation>Escolha um tema para o Openbox</translation>
+    </message>
+    <message>
         <location filename="../maindialog.cpp" line="78"/>
-        <source>About ObConf-Qt</source>
-        <translation>Sobre ObConf-Qt</translation>
+        <source>About Labwc-conf</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../maindialog.cpp" line="79"/>
-        <source>A preferences manager for Openbox
+        <source>A preferences manager for Labwc
 
-Copyright (c) 2014-2015
+Copyright (c) 2014-2023
 
 Authors:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
@@ -616,22 +601,7 @@ The program is based on ObConf developed by the following developers.
 * Dana Jansens &lt;danakj@orodu.net&gt;
 * Tim Riley &lt;tr@slackzone.org&gt;
 * Javeed Shaikh &lt;syscrash2k@gmail.com&gt;</source>
-        <translation>Um gerenciador de preferências para o Openbox
-
-Copyright (C) 2014-2015
-
-Autor:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-
-O programa é baseado no ObConf, desenvolvido pelos seguintes desenvolvedores:
-* Dana Jansens &lt;danakj@orodu.net&gt;
-* Tim Riley &lt;tr@slackzone.org&gt;
-* Javeed Shaikh &lt;syscrash2k@gmail.com&gt;</translation>
-    </message>
-    <message>
-        <location filename="../theme.cpp" line="149"/>
-        <source>Choose an Openbox theme</source>
-        <translation>Escolha um tema para o Openbox</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -688,12 +658,12 @@ Os seguintes erros foram reportados:
 %3</translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="53"/>
+        <location filename="../labwc-conf.cpp" line="53"/>
         <source>ObConf Error</source>
         <translation>Erro ObConf</translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="73"/>
+        <location filename="../labwc-conf.cpp" line="73"/>
         <source>Syntax: obconf [options] [ARCHIVE.obt]
 
 Options:
@@ -714,48 +684,46 @@ Opções:
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="97"/>
+        <location filename="../labwc-conf.cpp" line="97"/>
         <source>--install requires an argument
 </source>
         <translation>--install requer um argumento
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="103"/>
+        <location filename="../labwc-conf.cpp" line="103"/>
         <source>--archive requires an argument
 </source>
         <translation>--install requer um argumento
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="109"/>
+        <location filename="../labwc-conf.cpp" line="109"/>
         <source>--config-file requires an argument
 </source>
         <translation>--config-file requer um argumento
 </translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="223"/>
-        <location filename="../obconf-qt.cpp" line="238"/>
+        <location filename="../labwc-conf.cpp" line="223"/>
+        <location filename="../labwc-conf.cpp" line="238"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="224"/>
-        <source>Failed to load an rc.xml. You have probably failed to install Openbox properly.</source>
-        <translation>Falha para carregar rc.xml Você provavelmente não instalou o Openbox corretamente.</translation>
+        <location filename="../labwc-conf.cpp" line="224"/>
+        <source>Failed to load an rc.xml. You have probably failed to install labwc properly.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="236"/>
-        <source>Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.
+        <location filename="../labwc-conf.cpp" line="236"/>
+        <source>Error while parsing the labwc configuration file.  Your configuration file is not valid XML.
 
 Message: %1</source>
-        <translation>Erro ao analisar o arquivo de configuração do Openbox. Seu arquivo de configuração não é um XML válido.
-
-Mensagem: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../obconf-qt.cpp" line="58"/>
+        <location filename="../labwc-conf.cpp" line="58"/>
         <source>Copyright (c) 2003-2008   Dana Jansens
 Copyright (c) 2003        Tim Riley
 Copyright (c) 2007        Javeed Shaikh

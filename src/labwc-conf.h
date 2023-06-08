@@ -18,7 +18,7 @@
 
 #ifndef obconf_qt_H
 #define obconf_qt_H
-
+// to remove render and set labwc paths
 #include <obrender/render.h>
 #include <obrender/instance.h>
 #include <obt/xml.h>

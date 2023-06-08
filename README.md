@@ -11,6 +11,7 @@ Most working are already theme, desktops, margins, and font settings.
 ### To do
 
 - [ ] remove x11 preview code
+- [ ] remove openbox dependency
 - [ ] set labwc conf directory
 - [ ] fix loading translations
 - [ ] fix desktop file

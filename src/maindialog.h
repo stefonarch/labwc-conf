@@ -85,16 +85,16 @@ private Q_SLOTS:
 
   //apearance
   void on_window_border_toggled(bool checked);
-  void on_animate_iconify_toggled(bool checked);
+//  void on_animate_iconify_toggled(bool checked);//cornerradius...
   void on_title_layout_textChanged(const QString& text);
 
   // font
   void on_font_active_changed();
-  void on_font_inactive_changed();
-  void on_font_menu_header_changed();
+//  void on_font_inactive_changed();
+//  void on_font_menu_header_changed();
   void on_font_menu_item_changed();
   void on_font_active_display_changed();
-  void on_font_inactive_display_changed();
+// void on_font_inactive_display_changed();
 
   // windows
   void on_fixed_monitor_valueChanged(int newValue);
