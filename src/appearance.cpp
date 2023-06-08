@@ -56,14 +56,14 @@ void MainDialog::appearance_setup_tab() {
   f = read_font(ui.font_menu_item, "MenuItem", TRUE);
   // FIXME preview_update_set_menu_item_font(f);
 
-  if(!(f = read_font(ui.font_active_display, "OnScreenDisplay", FALSE))) {
-    f = read_font(ui.font_active_display, "OnScreenDisplay", TRUE);
-    tree_delete_node("theme/font:place=OnScreenDisplay");
+  if(!(f = read_font(ui.font_active_display, "OSD", FALSE))) {
+    f = read_font(ui.font_active_display, "OSD", TRUE);
+    tree_delete_node("theme/font:place=OSD");
   }
 
   // FIXME preview_update_set_osd_active_font(f);
 
- // f = read_font(ui.font_inactive_display, "InactiveOnScreenDisplay", TRUE);
+ // f = read_font(ui.font_inactive_display, "InactiveOSD", TRUE);
   // FIXME preview_update_set_osd_inactive_font(f);
 }
 
@@ -108,14 +108,14 @@ void MainDialog::on_font_menu_item_changed() {
 }
 
 void MainDialog::on_font_active_display_changed() {
-  write_font(ui.font_active_display, "OnScreenDisplay");
-  // FIXME preview_update_set_osd_active_font(write_font(w, "OnScreenDisplay"));
+  write_font(ui.font_active_display, "OSD");
+  // FIXME preview_update_set_osd_active_font(write_font(w, "OSD"));
 }
 
 //void MainDialog::on_font_inactive_display_changed() {
-  //write_font(ui.font_inactive_display, "InactiveOnScreenDisplay");
+  //write_font(ui.font_inactive_display, "InactiveOSD");
   // FIXME preview_update_set_osd_inactive_font
-  // FIXME (write_font(w, "InactiveOnScreenDisplay"));
+  // FIXME (write_font(w, "InactiveOSD"));
 //}
 
 static RrFont* read_font(Fm::FontButton* button, const gchar* place,
