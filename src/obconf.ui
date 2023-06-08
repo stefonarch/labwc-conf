@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>595</width>
-    <height>578</height>
+    <width>708</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -59,11 +59,6 @@
        <item>
         <property name="text">
          <string>Margins</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Dock</string>
         </property>
        </item>
       </widget>

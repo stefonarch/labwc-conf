@@ -217,11 +217,11 @@ int main(int argc, char** argv) {
   xmlIndentTreeOutput = 1;
 
   if(!((obc_config_file &&
-        obt_xml_load_file(parse_i, obc_config_file, "openbox_config")) ||
-       obt_xml_load_config_file(parse_i, "openbox", "rc.xml",
-                                "openbox_config"))) {
+        obt_xml_load_file(parse_i, obc_config_file, "labwc_config")) ||
+       obt_xml_load_config_file(parse_i, "labwc", "rc.xml",
+                                "labwc_config"))) {
     QMessageBox::critical(NULL, QObject::tr("Error"),
-                          QObject::tr("Failed to load an rc.xml. You have probably failed to install Openbox properly."));
+                          QObject::tr("Failed to load an rc.xml. You have probably failed to install labwc properly."));
   }
   else {
     doc = obt_xml_doc(parse_i);
@@ -233,7 +233,7 @@ int main(int argc, char** argv) {
     xmlErrorPtr e = xmlGetLastError();
 
     if(e) {
-      QString message = QObject::tr("Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n\nMessage: %1")
+      QString message = QObject::tr("Error while parsing the lawwc configuration file.  Your configuration file is not valid XML.\n\nMessage: %1")
         .arg(QString::fromUtf8(e->message));
       QMessageBox::critical(NULL, QObject::tr("Error"), message);
     }
