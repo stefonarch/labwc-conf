@@ -59,11 +59,11 @@ private:
 
   // windows
   void windows_enable_stuff();
-  
+
   // move & resize
   void moveresize_enable_stuff();
   void write_fixed_position(const char* coord);
-  
+
   // mouse
   void mouse_enable_stuff();
   int read_doubleclick_action();
@@ -84,9 +84,9 @@ private Q_SLOTS:
   void on_theme_archive_clicked();
 
   //apearance
-  void on_window_border_toggled(bool checked);
-  void on_animate_iconify_toggled(bool checked);
-  void on_title_layout_textChanged(const QString& text);
+//  void on_window_border_toggled(bool checked);
+//  void on_animate_iconify_toggled(bool checked);
+//  void on_title_layout_textChanged(const QString& text);
 
   // font
   void on_font_active_changed();
@@ -109,7 +109,7 @@ private Q_SLOTS:
   void on_resist_window_valueChanged(int newValue);
   void on_resist_edge_valueChanged(int newValue);
   void on_resize_contents_toggled(bool checked);
-  
+
   void on_resize_popup_currentIndexChanged(int index);
   void on_resize_position_currentIndexChanged(int index);
   void on_fixed_x_popup_currentIndexChanged(int index);

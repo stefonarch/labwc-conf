@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>595</width>
-    <height>578</height>
+    <width>708</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Window Manager Preferences</string>
+   <string>Labwc Preferences</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -71,7 +71,7 @@
      <item>
       <widget class="QStackedWidget" name="stackedWidget">
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="themePage">
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -95,76 +95,7 @@
         </layout>
        </widget>
        <widget class="QWidget" name="appearancePage">
-        <layout class="QVBoxLayout" name="verticalLayout_4">
-         <item>
-          <widget class="QGroupBox" name="groupBox">
-           <property name="title">
-            <string>Windows</string>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_3">
-            <item>
-             <widget class="QCheckBox" name="window_border">
-              <property name="text">
-               <string>&amp;Windows retain a border when undecorated</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="animate_iconify">
-              <property name="text">
-               <string>A&amp;nimate iconify and restore</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QGroupBox" name="groupBox_2">
-           <property name="title">
-            <string>Window Titles</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_2">
-            <item row="0" column="0">
-             <widget class="QLabel" name="label">
-              <property name="text">
-               <string>Button order:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="title_layout"/>
-            </item>
-            <item row="1" column="0" colspan="2">
-             <widget class="QLabel" name="label_35">
-              <property name="text">
-               <string>N: Window icon
-L: Window label (Title)
-I: Iconify (Minimize)
-M: Maximize
-C: Close
-S: Shade (Roll up)
-D: Omnipresent (On all desktops)</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
+        <layout class="QVBoxLayout" name="verticalLayout_4"/>
        </widget>
        <widget class="QWidget" name="fontPage">
         <layout class="QFormLayout" name="formLayout">

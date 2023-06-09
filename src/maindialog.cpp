@@ -48,7 +48,7 @@ MainDialog::MainDialog():
   moveresize_setup_tab();
   margins_setup_tab();
   desktops_setup_tab();
-  dock_setup_tab();
+  dock_setup_tab(); // to remove all dock stuff
 
   // Normally, this is called in ui.setupUi(), but this is not desired behavior.
   // So we edited the generated ui header file with "sed" and generated a fixed version.
