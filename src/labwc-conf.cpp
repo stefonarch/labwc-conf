@@ -71,7 +71,7 @@ static void print_version() {
 
 static void print_help() {
   QString output = QObject::tr(
-    "Syntax: obconf [options] [ARCHIVE.obt]\n"
+    "Syntax: labwc.conf [options] [ARCHIVE.obt]\n"
     "\nOptions:\n"
     "  --help                Display this help and exit\n"
     "  --version             Display the version and exit\n"
@@ -190,7 +190,7 @@ int main(int argc, char** argv) {
   app.installTranslator(&qtTranslator);
 
   // install our own tranlations
-  translator.load(QStringLiteral("obconf-qt_") + QLocale::system().name(), QStringLiteral(PACKAGE_DATA_DIR) + QStringLiteral("/translations"));
+  translator.load(QStringLiteral("labwc-conf_") + QLocale::system().name(), QStringLiteral(PACKAGE_DATA_DIR) + QStringLiteral("/translations"));
   app.installTranslator(&translator);
 
   // load configurations

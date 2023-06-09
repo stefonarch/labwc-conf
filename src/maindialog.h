@@ -84,9 +84,9 @@ private Q_SLOTS:
   void on_theme_archive_clicked();
 
   //apearance
-  void on_window_border_toggled(bool checked);
+//  void on_window_border_toggled(bool checked);
 //  void on_animate_iconify_toggled(bool checked);//cornerradius...
-  void on_title_layout_textChanged(const QString& text);
+//  void on_title_layout_textChanged(const QString& text);
 
   // font
   void on_font_active_changed();

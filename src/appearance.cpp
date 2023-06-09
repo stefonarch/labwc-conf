@@ -36,13 +36,13 @@ void MainDialog::appearance_setup_tab() {
   gchar* layout;
   RrFont* f;
 
-  ui.window_border->setChecked(tree_get_bool("theme/keepBorder", TRUE));
+  //ui.window_border->setChecked(tree_get_bool("theme/keepBorder", TRUE));
  // ui.animate_iconify->setChecked(tree_get_bool("theme/animateIconify", TRUE));
 
-  layout = tree_get_string("theme/titleLayout", "NLIMC");
-  ui.title_layout->setText(QString::fromUtf8(static_cast<char*>(layout)));
+ // layout = tree_get_string("theme/titleLayout", "NLIMC");
+ // ui.title_layout->setText(QString::fromUtf8(static_cast<char*>(layout)));
   // preview_update_set_title_layout(layout); // FIXME
-  g_free(layout);
+ // g_free(layout);
 
   f = read_font(ui.font_active, "ActiveWindow", TRUE);
   // FIXME preview_update_set_active_font(f);
@@ -67,25 +67,25 @@ void MainDialog::appearance_setup_tab() {
   // FIXME preview_update_set_osd_inactive_font(f);
 }
 
-void MainDialog::on_window_border_toggled(bool checked) {
-  tree_set_bool("theme/keepBorder", checked);
-}
+//void MainDialog::on_window_border_toggled(bool checked) {
+  //tree_set_bool("theme/keepBorder", checked);
+//}
 
 //void MainDialog::on_animate_iconify_toggled(bool checked) {
 //  tree_set_bool("theme/animateIconify", checked);
 //}
 
-void MainDialog::on_title_layout_textChanged(const QString& text) {
-  QByteArray layout;
+//void MainDialog::on_title_layout_textChanged(const QString& text) {
+//  QByteArray layout;
   // omit unknown chars
-  for(int i = 0; i < text.length(); ++i) {
-    char ch = text.at(i).toUpper().toLatin1();
-    if(strchr("NDSLIMC", ch))
-      layout += ch;
-  }
-  tree_set_string("theme/titleLayout", layout.constData());
+//  for(int i = 0; i < text.length(); ++i) {
+//    char ch = text.at(i).toUpper().toLatin1();
+ //   if(strchr("NDSLIMC", ch))
+ //     layout += ch;
+ // }
+ // tree_set_string("theme/titleLayout", layout.constData());
   // FIXME preview_update_set_title_layout(layout);
-}
+//}
 
 void MainDialog::on_font_active_changed() {
   write_font(ui.font_active, "ActiveWindow");

@@ -8,14 +8,16 @@ This is early alpha/proof of concept. It needs to be started with ` env QT_QPA_P
 
 Most working are already theme, desktops, margins, and font settings.
 
+![labwc-conf](labwc-conf.png)
+
 ### To do
 
 - [ ] remove x11 preview code
 - [ ] remove openbox dependency
 - [ ] set labwc conf directory
-- [ ] fix loading translations
-- [ ] fix desktop file
-- [ ] add/correct settings
+- [x] fix loading translations
+- [x] fix desktop file
+- [ ] add/remove/correct settings
 - [ ] silence warnings
 
 ## Installation
