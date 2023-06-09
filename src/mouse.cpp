@@ -24,10 +24,6 @@
 #include <obrender/render.h>
 #include "tree.h"
 
-#include <QX11Info>
-// FIXME: how to support XCB or Wayland?
-#include <X11/Xlib.h>
-
 using namespace Obconf;
 
 extern RrInstance* rrinst; // defined in obconf-qt.cpp
@@ -42,17 +38,17 @@ static xmlNodePtr saved_custom = NULL;
 //    gpointer data);
 void MainDialog::mouse_setup_tab() {
   gint a;
-  
+
   ui.focus_mouse->setChecked(tree_get_bool("focus/followMouse", FALSE));
   ui.focus_delay->setValue(tree_get_int("focus/focusDelay", 0));
   ui.focus_raise->setChecked(tree_get_bool("focus/raiseOnFocus", FALSE));
   ui.focus_notlast->setChecked(!tree_get_bool("focus/focusLast", TRUE));
   ui.focus_under_mouse->setChecked(tree_get_bool("focus/underMouse", FALSE));
   ui.doubleclick_time->setValue(tree_get_int("mouse/doubleClickTime", 200));
-  
+
   // w = get_widget("titlebar_doubleclick");
   a = read_doubleclick_action();
-  
+
   if(a == TITLEBAR_CUSTOM) {
     ui.titlebar_doubleclick->addItem(tr("Custom actions"));
     /*
@@ -112,33 +108,33 @@ void MainDialog::on_doubleclick_time_valueChanged(int newValue) {
 int MainDialog::read_doubleclick_action() {
   xmlNodePtr n, top, c;
   gint max = 0, shade = 0, other = 0;
-  
+
   top = tree_get_node("mouse/context:name=Titlebar"
   "/mousebind:button=Left:action=DoubleClick", NULL);
   n = top->children;
-  
+
   /* save the current state */
   saved_custom = xmlCopyNode(top, 1);
-  
+
   /* remove the namespace from all the nodes under saved_custom..
    *     without recursion! */
   c = saved_custom;
-  
+
   while(c) {
     xmlSetNs(c, NULL);
-    
+
     if(c->children)
       c = c->children;
     else if(c->next)
       c = c->next;
-    
+
     while(c->parent && !c->parent->next)
       c = c->parent;
-    
+
     if(!c->parent)
       c = NULL;
   }
-  
+
   while(n) {
     if(!xmlStrcmp(n->name, (const xmlChar*)"action")) {
       if(obt_xml_attr_contains(n, "name", "ToggleMaximizeFull"))
@@ -147,33 +143,33 @@ int MainDialog::read_doubleclick_action() {
         ++shade;
       else
         ++other;
-      
+
     }
-    
+
     n = n->next;
   }
-  
+
   if(max == 1 && shade == 0 && other == 0)
     return TITLEBAR_MAXIMIZE;
-  
+
   if(max == 0 && shade == 1 && other == 0)
     return TITLEBAR_SHADE;
-  
+
   return TITLEBAR_CUSTOM;
 }
 
 void MainDialog::write_doubleclick_action(int a) {
   xmlNodePtr n;
-  
+
   n = tree_get_node("mouse/context:name=Titlebar"
   "/mousebind:button=Left:action=DoubleClick", NULL);
-  
+
   /* remove all children */
   while(n->children) {
     xmlUnlinkNode(n->children);
     xmlFreeNode(n->children);
   }
-  
+
   if(a == TITLEBAR_MAXIMIZE) {
     n = xmlNewChild(n, NULL, (xmlChar*)"action", NULL);
     xmlSetProp(n, (xmlChar*)"name", (xmlChar*)"ToggleMaximizeFull");
@@ -184,13 +180,13 @@ void MainDialog::write_doubleclick_action(int a) {
   }
   else {
     xmlNodePtr c = saved_custom->children;
-    
+
     while(c) {
       xmlAddChild(n, xmlCopyNode(c, 1));
       c = c->next;
     }
   }
-  
+
   tree_apply();
 }
 

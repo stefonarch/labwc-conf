@@ -123,12 +123,17 @@ void MainDialog::desktops_write_names() {
   }
 
   tree_apply();
-  /* make openbox re-set the property */
-  XDeleteProperty(QX11Info::display(), QX11Info::appRootWindow(),
-                  XInternAtom(QX11Info::display(), "_NET_DESKTOP_NAMES", False));
+  if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
+    /* make openbox re-set the property */
+    XDeleteProperty(QX11Info::display(), QX11Info::appRootWindow(),
+                    XInternAtom(QX11Info::display(), "_NET_DESKTOP_NAMES", False));
+  }
 }
 
 void MainDialog::desktops_write_number() {
+  if(QGuiApplication::platformName() != QStringLiteral("xcb")) {
+    return;
+  }
   XEvent ce;
   tree_set_int("desktops/number", num_desktops);
   ce.xclient.type = ClientMessage;

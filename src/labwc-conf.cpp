@@ -117,6 +117,9 @@ static void parse_args(int argc, char** argv) {
 
 static gboolean get_all(Window win, Atom prop, Atom type, gint size,
                         guchar** data, guint* num) {
+  if(QGuiApplication::platformName() != QStringLiteral("xcb")) {
+    return FALSE;
+  }
   gboolean ret = FALSE;
   gint res;
   guchar* xdata = NULL;
@@ -159,6 +162,9 @@ static gboolean get_all(Window win, Atom prop, Atom type, gint size,
 }
 
 static gboolean prop_get_string_utf8(Window win, Atom prop, gchar** ret) {
+  if(QGuiApplication::platformName() != QStringLiteral("xcb")) {
+    return FALSE;
+  }
   gchar* raw;
   gchar* str;
   guint num;
@@ -190,7 +196,7 @@ int main(int argc, char** argv) {
   app.installTranslator(&qtTranslator);
 
   // install our own tranlations
-  translator.load(QStringLiteral("obconf-qt_") + QLocale::system().name(), QStringLiteral(PACKAGE_DATA_DIR) + QStringLiteral("/translations"));
+  translator.load(QStringLiteral("labwc-conf_") + QLocale::system().name(), QStringLiteral(PACKAGE_DATA_DIR) + QStringLiteral("/translations"));
   app.installTranslator(&translator);
 
   // load configurations
@@ -204,14 +210,16 @@ int main(int argc, char** argv) {
 
   paths = obt_paths_new();
   parse_i = obt_xml_instance_new();
-  int screen = QX11Info::appScreen();
-  rrinst = RrInstanceNew(QX11Info::display(), screen);
-  if(!obc_config_file) {
-    gchar* p;
-    if(prop_get_string_utf8(QX11Info::appRootWindow(screen),
-                            XInternAtom(QX11Info::display(), "_OB_CONFIG_FILE", 0), &p)) {
-      obc_config_file = g_filename_from_utf8(p, -1, NULL, NULL, NULL);
-      g_free(p);
+  if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
+    int screen = QX11Info::appScreen();
+    rrinst = RrInstanceNew(QX11Info::display(), screen);
+    if(!obc_config_file) {
+      gchar* p;
+      if(prop_get_string_utf8(QX11Info::appRootWindow(screen),
+                              XInternAtom(QX11Info::display(), "_OB_CONFIG_FILE", 0), &p)) {
+        obc_config_file = g_filename_from_utf8(p, -1, NULL, NULL, NULL);
+        g_free(p);
+      }
     }
   }
   xmlIndentTreeOutput = 1;

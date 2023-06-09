@@ -114,7 +114,7 @@ void tree_apply()
     }
     g_free(p);
 
-    if (!err) {
+    if (QX11Info::isPlatformX11() && !err) {
         XEvent ce;
 
         ce.xclient.type = ClientMessage;

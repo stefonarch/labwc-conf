@@ -51,6 +51,6 @@ add_subdirectory(src)
 
 # install an icon for the application
 install(
-  FILES data/labwc-conf.svg
+  FILES data/labwc-conf.png
   DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
 )

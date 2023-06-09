@@ -20,7 +20,6 @@
 
 #include "fontbutton.h"
 #include <QFontDialog>
-#include <X11/X.h>
 
 using namespace Fm;
 

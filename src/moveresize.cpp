@@ -24,10 +24,6 @@
 #include <obrender/render.h>
 #include "tree.h"
 
-#include <QX11Info>
-// FIXME: how to support XCB or Wayland?
-#include <X11/Xlib.h>
-
 using namespace Obconf;
 
 extern RrInstance* rrinst; // defined in obconf-qt.cpp
@@ -87,7 +83,7 @@ void MainDialog::moveresize_setup_tab() {
   ui.fixed_x_popup->setCurrentIndex(pos);
   ui.fixed_x_pos->setValue(MAX(atoi(fixed_pos), 0));
   g_free(s);
-  
+
   s = tree_get_string("resize/popupFixedPosition/y", "0");
   opp = s[0] == '-';
 
@@ -97,7 +93,7 @@ void MainDialog::moveresize_setup_tab() {
 
   ui.fixed_y_popup->setCurrentIndex(pos);
   ui.fixed_y_pos->setValue(MAX(atoi(s), 0));
-    
+
   g_free(s);
 
   i = tree_get_int("mouse/screenEdgeWarpTime", 400);

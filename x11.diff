@@ -1,0 +1,304 @@
+diff -ruNp obconf-qt-orig/src/desktops.cpp labwc-conf/src/desktops.cpp
+--- obconf-qt-orig/src/desktops.cpp
++++ labwc-conf/src/desktops.cpp
+@@ -123,12 +123,17 @@ void MainDialog::desktops_write_names()
+   }
+ 
+   tree_apply();
+-  /* make openbox re-set the property */
+-  XDeleteProperty(QX11Info::display(), QX11Info::appRootWindow(),
+-                  XInternAtom(QX11Info::display(), "_NET_DESKTOP_NAMES", False));
++  if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
++    /* make openbox re-set the property */
++    XDeleteProperty(QX11Info::display(), QX11Info::appRootWindow(),
++                    XInternAtom(QX11Info::display(), "_NET_DESKTOP_NAMES", False));
++  }
+ }
+ 
+ void MainDialog::desktops_write_number() {
++  if(QGuiApplication::platformName() != QStringLiteral("xcb")) {
++    return;
++  }
+   XEvent ce;
+   tree_set_int("desktops/number", num_desktops);
+   ce.xclient.type = ClientMessage;
+diff -ruNp obconf-qt-orig/src/dock.cpp labwc-conf/src/dock.cpp
+--- obconf-qt-orig/src/dock.cpp
++++ labwc-conf/src/dock.cpp
+@@ -24,10 +24,6 @@
+ #include <obrender/render.h>
+ #include "tree.h"
+ 
+-#include <QX11Info>
+-// FIXME: how to support XCB or Wayland?
+-#include <X11/Xlib.h>
+-
+ using namespace Obconf;
+ 
+ extern RrInstance* rrinst; // defined in obconf-qt.cpp
+diff -ruNp obconf-qt-orig/src/fontbutton.cpp labwc-conf/src/fontbutton.cpp
+--- obconf-qt-orig/src/fontbutton.cpp
++++ labwc-conf/src/fontbutton.cpp
+@@ -20,7 +20,6 @@
+ 
+ #include "fontbutton.h"
+ #include <QFontDialog>
+-#include <X11/X.h>
+ 
+ using namespace Fm;
+ 
+diff -ruNp obconf-qt-orig/src/margins.cpp labwc-conf/src/margins.cpp
+--- obconf-qt-orig/src/margins.cpp
++++ labwc-conf/src/margins.cpp
+@@ -24,10 +24,6 @@
+ #include <obrender/render.h>
+ #include "tree.h"
+ 
+-#include <QX11Info>
+-// FIXME: how to support XCB or Wayland?
+-#include <X11/Xlib.h>
+-
+ using namespace Obconf;
+ 
+ extern RrInstance* rrinst; // defined in obconf-qt.cpp
+diff -ruNp obconf-qt-orig/src/mouse.cpp labwc-conf/src/mouse.cpp
+--- obconf-qt-orig/src/mouse.cpp
++++ labwc-conf/src/mouse.cpp
+@@ -24,10 +24,6 @@
+ #include <obrender/render.h>
+ #include "tree.h"
+ 
+-#include <QX11Info>
+-// FIXME: how to support XCB or Wayland?
+-#include <X11/Xlib.h>
+-
+ using namespace Obconf;
+ 
+ extern RrInstance* rrinst; // defined in obconf-qt.cpp
+@@ -42,17 +38,17 @@ static xmlNodePtr saved_custom = NULL;
+ //    gpointer data);
+ void MainDialog::mouse_setup_tab() {
+   gint a;
+-  
++
+   ui.focus_mouse->setChecked(tree_get_bool("focus/followMouse", FALSE));
+   ui.focus_delay->setValue(tree_get_int("focus/focusDelay", 0));
+   ui.focus_raise->setChecked(tree_get_bool("focus/raiseOnFocus", FALSE));
+   ui.focus_notlast->setChecked(!tree_get_bool("focus/focusLast", TRUE));
+   ui.focus_under_mouse->setChecked(tree_get_bool("focus/underMouse", FALSE));
+   ui.doubleclick_time->setValue(tree_get_int("mouse/doubleClickTime", 200));
+-  
++
+   // w = get_widget("titlebar_doubleclick");
+   a = read_doubleclick_action();
+-  
++
+   if(a == TITLEBAR_CUSTOM) {
+     ui.titlebar_doubleclick->addItem(tr("Custom actions"));
+     /*
+@@ -112,33 +108,33 @@ void MainDialog::on_doubleclick_time_val
+ int MainDialog::read_doubleclick_action() {
+   xmlNodePtr n, top, c;
+   gint max = 0, shade = 0, other = 0;
+-  
++
+   top = tree_get_node("mouse/context:name=Titlebar"
+   "/mousebind:button=Left:action=DoubleClick", NULL);
+   n = top->children;
+-  
++
+   /* save the current state */
+   saved_custom = xmlCopyNode(top, 1);
+-  
++
+   /* remove the namespace from all the nodes under saved_custom..
+    *     without recursion! */
+   c = saved_custom;
+-  
++
+   while(c) {
+     xmlSetNs(c, NULL);
+-    
++
+     if(c->children)
+       c = c->children;
+     else if(c->next)
+       c = c->next;
+-    
++
+     while(c->parent && !c->parent->next)
+       c = c->parent;
+-    
++
+     if(!c->parent)
+       c = NULL;
+   }
+-  
++
+   while(n) {
+     if(!xmlStrcmp(n->name, (const xmlChar*)"action")) {
+       if(obt_xml_attr_contains(n, "name", "ToggleMaximizeFull"))
+@@ -147,33 +143,33 @@ int MainDialog::read_doubleclick_action(
+         ++shade;
+       else
+         ++other;
+-      
++
+     }
+-    
++
+     n = n->next;
+   }
+-  
++
+   if(max == 1 && shade == 0 && other == 0)
+     return TITLEBAR_MAXIMIZE;
+-  
++
+   if(max == 0 && shade == 1 && other == 0)
+     return TITLEBAR_SHADE;
+-  
++
+   return TITLEBAR_CUSTOM;
+ }
+ 
+ void MainDialog::write_doubleclick_action(int a) {
+   xmlNodePtr n;
+-  
++
+   n = tree_get_node("mouse/context:name=Titlebar"
+   "/mousebind:button=Left:action=DoubleClick", NULL);
+-  
++
+   /* remove all children */
+   while(n->children) {
+     xmlUnlinkNode(n->children);
+     xmlFreeNode(n->children);
+   }
+-  
++
+   if(a == TITLEBAR_MAXIMIZE) {
+     n = xmlNewChild(n, NULL, (xmlChar*)"action", NULL);
+     xmlSetProp(n, (xmlChar*)"name", (xmlChar*)"ToggleMaximizeFull");
+@@ -184,13 +180,13 @@ void MainDialog::write_doubleclick_actio
+   }
+   else {
+     xmlNodePtr c = saved_custom->children;
+-    
++
+     while(c) {
+       xmlAddChild(n, xmlCopyNode(c, 1));
+       c = c->next;
+     }
+   }
+-  
++
+   tree_apply();
+ }
+ 
+diff -ruNp obconf-qt-orig/src/moveresize.cpp labwc-conf/src/moveresize.cpp
+--- obconf-qt-orig/src/moveresize.cpp
++++ labwc-conf/src/moveresize.cpp
+@@ -24,10 +24,6 @@
+ #include <obrender/render.h>
+ #include "tree.h"
+ 
+-#include <QX11Info>
+-// FIXME: how to support XCB or Wayland?
+-#include <X11/Xlib.h>
+-
+ using namespace Obconf;
+ 
+ extern RrInstance* rrinst; // defined in obconf-qt.cpp
+@@ -87,7 +83,7 @@ void MainDialog::moveresize_setup_tab()
+   ui.fixed_x_popup->setCurrentIndex(pos);
+   ui.fixed_x_pos->setValue(MAX(atoi(fixed_pos), 0));
+   g_free(s);
+-  
++
+   s = tree_get_string("resize/popupFixedPosition/y", "0");
+   opp = s[0] == '-';
+ 
+@@ -97,7 +93,7 @@ void MainDialog::moveresize_setup_tab()
+ 
+   ui.fixed_y_popup->setCurrentIndex(pos);
+   ui.fixed_y_pos->setValue(MAX(atoi(s), 0));
+-    
++
+   g_free(s);
+ 
+   i = tree_get_int("mouse/screenEdgeWarpTime", 400);
+diff -ruNp obconf-qt-orig/src/labwc-conf.cpp labwc-conf/src/labwc-conf.cpp
+--- obconf-qt-orig/src/labwc-conf.cpp
++++ labwc-conf/src/labwc-conf.cpp
+@@ -117,6 +117,9 @@ static void parse_args(int argc, char**
+ 
+ static gboolean get_all(Window win, Atom prop, Atom type, gint size,
+                         guchar** data, guint* num) {
++  if(QGuiApplication::platformName() != QStringLiteral("xcb")) {
++    return FALSE;
++  }
+   gboolean ret = FALSE;
+   gint res;
+   guchar* xdata = NULL;
+@@ -159,6 +162,9 @@ static gboolean get_all(Window win, Atom
+ }
+ 
+ static gboolean prop_get_string_utf8(Window win, Atom prop, gchar** ret) {
++  if(QGuiApplication::platformName() != QStringLiteral("xcb")) {
++    return FALSE;
++  }
+   gchar* raw;
+   gchar* str;
+   guint num;
+@@ -204,14 +210,16 @@ int main(int argc, char** argv) {
+ 
+   paths = obt_paths_new();
+   parse_i = obt_xml_instance_new();
+-  int screen = QX11Info::appScreen();
+-  rrinst = RrInstanceNew(QX11Info::display(), screen);
+-  if(!obc_config_file) {
+-    gchar* p;
+-    if(prop_get_string_utf8(QX11Info::appRootWindow(screen),
+-                            XInternAtom(QX11Info::display(), "_OB_CONFIG_FILE", 0), &p)) {
+-      obc_config_file = g_filename_from_utf8(p, -1, NULL, NULL, NULL);
+-      g_free(p);
++  if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
++    int screen = QX11Info::appScreen();
++    rrinst = RrInstanceNew(QX11Info::display(), screen);
++    if(!obc_config_file) {
++      gchar* p;
++      if(prop_get_string_utf8(QX11Info::appRootWindow(screen),
++                              XInternAtom(QX11Info::display(), "_OB_CONFIG_FILE", 0), &p)) {
++        obc_config_file = g_filename_from_utf8(p, -1, NULL, NULL, NULL);
++        g_free(p);
++      }
+     }
+   }
+   xmlIndentTreeOutput = 1;
+diff -ruNp obconf-qt-orig/src/tree.cpp labwc-conf/src/tree.cpp
+--- obconf-qt-orig/src/tree.cpp
++++ labwc-conf/src/tree.cpp
+@@ -114,7 +114,7 @@ void tree_apply()
+     }
+     g_free(p);
+ 
+-    if (!err) {
++    if (QX11Info::isPlatformX11() && !err) {
+         XEvent ce;
+ 
+         ce.xclient.type = ClientMessage;
+diff -ruNp obconf-qt-orig/src/windows.cpp labwc-conf/src/windows.cpp
+--- obconf-qt-orig/src/windows.cpp
++++ labwc-conf/src/windows.cpp
+@@ -24,10 +24,6 @@
+ #include <obrender/render.h>
+ #include "tree.h"
+ 
+-#include <QX11Info>
+-// FIXME: how to support XCB or Wayland?
+-#include <X11/Xlib.h>
+-
+ using namespace Obconf;
+ 
+ extern RrInstance* rrinst; // defined in obconf-qt.cpp

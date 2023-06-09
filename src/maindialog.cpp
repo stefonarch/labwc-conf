@@ -33,7 +33,7 @@ MainDialog::MainDialog():
   themes_model(new QStandardItemModel()) {
 
   ui.setupUi(this);
-  setWindowIcon(QIcon(QStringLiteral(PIXMAPS_DIR) + QStringLiteral("/obconf-qt.png")));
+  setWindowIcon(QIcon(QStringLiteral(PIXMAPS_DIR) + QStringLiteral("/labwc-conf.png")));
 
   ui.listWidget->setCurrentRow(0);
   // resize the list widget according to the width of its content.
