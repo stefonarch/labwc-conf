@@ -52,18 +52,18 @@ private:
   void moveresize_setup_tab();
   void margins_setup_tab();
   void desktops_setup_tab();
-  void dock_setup_tab();  // remove
+  void dock_setup_tab();
 
   // theme
   void add_theme_dir(const char* dirname);
 
   // windows
   void windows_enable_stuff();
-
+  
   // move & resize
   void moveresize_enable_stuff();
   void write_fixed_position(const char* coord);
-
+  
   // mouse
   void mouse_enable_stuff();
   int read_doubleclick_action();
@@ -84,17 +84,17 @@ private Q_SLOTS:
   void on_theme_archive_clicked();
 
   //apearance
-//  void on_window_border_toggled(bool checked);
-//  void on_animate_iconify_toggled(bool checked);//cornerradius...
-//  void on_title_layout_textChanged(const QString& text);
+  void on_window_border_toggled(bool checked);
+  void on_animate_iconify_toggled(bool checked);
+  void on_title_layout_textChanged(const QString& text);
 
   // font
   void on_font_active_changed();
-//  void on_font_inactive_changed();
-//  void on_font_menu_header_changed();
+  void on_font_inactive_changed();
+  void on_font_menu_header_changed();
   void on_font_menu_item_changed();
   void on_font_active_display_changed();
-// void on_font_inactive_display_changed();
+  void on_font_inactive_display_changed();
 
   // windows
   void on_fixed_monitor_valueChanged(int newValue);
@@ -109,7 +109,7 @@ private Q_SLOTS:
   void on_resist_window_valueChanged(int newValue);
   void on_resist_edge_valueChanged(int newValue);
   void on_resize_contents_toggled(bool checked);
-
+  
   void on_resize_popup_currentIndexChanged(int index);
   void on_resize_position_currentIndexChanged(int index);
   void on_fixed_x_popup_currentIndexChanged(int index);
@@ -143,7 +143,7 @@ private Q_SLOTS:
   void on_desktop_popup_time_valueChanged(int newValue);
   void on_desktop_names_itemChanged(QListWidgetItem * item);
 
-  // docks (to remove)
+  // docks
   void on_dock_float_x_valueChanged(int newValue);
   void on_dock_float_y_valueChanged(int newValue);
   void on_dock_stack_top_toggled(bool checked);

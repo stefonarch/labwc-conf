@@ -33,7 +33,7 @@ MainDialog::MainDialog():
   themes_model(new QStandardItemModel()) {
 
   ui.setupUi(this);
-  setWindowIcon(QIcon(QStringLiteral(PIXMAPS_DIR) + QStringLiteral("/labwc.svg")));
+  setWindowIcon(QIcon(QStringLiteral(PIXMAPS_DIR) + QStringLiteral("/obconf-qt.png")));
 
   ui.listWidget->setCurrentRow(0);
   // resize the list widget according to the width of its content.
@@ -75,9 +75,9 @@ void MainDialog::reject() {
 }
 
 void MainDialog::on_about_clicked() {
-  QMessageBox::about(this, tr("About Labwc-conf"),
-                     tr("A preferences manager for Labwc\n\n"
-                        "Copyright (c) 2014-2023\n\n"
+  QMessageBox::about(this, tr("About ObConf-Qt"),
+                     tr("A preferences manager for Openbox\n\n"
+                        "Copyright (c) 2014-2015\n\n"
                         "Authors:\n"
                         "* Hong Jen Yee (PCMan) <pcman.tw@gmail.com>\n\n"
                         "The program is based on ObConf developed by the following developers.\n"

@@ -36,71 +36,71 @@ void MainDialog::appearance_setup_tab() {
   gchar* layout;
   RrFont* f;
 
-  //ui.window_border->setChecked(tree_get_bool("theme/keepBorder", TRUE));
- // ui.animate_iconify->setChecked(tree_get_bool("theme/animateIconify", TRUE));
+  ui.window_border->setChecked(tree_get_bool("theme/keepBorder", TRUE));
+  ui.animate_iconify->setChecked(tree_get_bool("theme/animateIconify", TRUE));
 
- // layout = tree_get_string("theme/titleLayout", "NLIMC");
- // ui.title_layout->setText(QString::fromUtf8(static_cast<char*>(layout)));
+  layout = tree_get_string("theme/titleLayout", "NLIMC");
+  ui.title_layout->setText(QString::fromUtf8(static_cast<char*>(layout)));
   // preview_update_set_title_layout(layout); // FIXME
- // g_free(layout);
+  g_free(layout);
 
   f = read_font(ui.font_active, "ActiveWindow", TRUE);
   // FIXME preview_update_set_active_font(f);
 
-//  f = read_font(ui.font_inactive, "InactiveWindow", TRUE);
+  f = read_font(ui.font_inactive, "InactiveWindow", TRUE);
   // FIXME preview_update_set_inactive_font(f);
 
-//  f = read_font(ui.font_menu_header, "MenuHeader", TRUE);
+  f = read_font(ui.font_menu_header, "MenuHeader", TRUE);
   // FIXME preview_update_set_menu_header_font(f);
 
   f = read_font(ui.font_menu_item, "MenuItem", TRUE);
   // FIXME preview_update_set_menu_item_font(f);
 
-  if(!(f = read_font(ui.font_active_display, "OSD", FALSE))) {
-    f = read_font(ui.font_active_display, "OSD", TRUE);
-    tree_delete_node("theme/font:place=OSD");
+  if(!(f = read_font(ui.font_active_display, "ActiveOnScreenDisplay", FALSE))) {
+    f = read_font(ui.font_active_display, "OnScreenDisplay", TRUE);
+    tree_delete_node("theme/font:place=OnScreenDisplay");
   }
 
   // FIXME preview_update_set_osd_active_font(f);
 
- // f = read_font(ui.font_inactive_display, "InactiveOSD", TRUE);
+  f = read_font(ui.font_inactive_display, "InactiveOnScreenDisplay", TRUE);
   // FIXME preview_update_set_osd_inactive_font(f);
 }
 
-//void MainDialog::on_window_border_toggled(bool checked) {
-  //tree_set_bool("theme/keepBorder", checked);
-//}
+void MainDialog::on_window_border_toggled(bool checked) {
+  tree_set_bool("theme/keepBorder", checked);
+}
 
-//void MainDialog::on_animate_iconify_toggled(bool checked) {
-//  tree_set_bool("theme/animateIconify", checked);
-//}
+void MainDialog::on_animate_iconify_toggled(bool checked) {
+  tree_set_bool("theme/animateIconify", checked);
+}
 
-//void MainDialog::on_title_layout_textChanged(const QString& text) {
-//  QByteArray layout;
+void MainDialog::on_title_layout_textChanged(const QString& text) {
+  QByteArray layout;
   // omit unknown chars
-//  for(int i = 0; i < text.length(); ++i) {
-//    char ch = text.at(i).toUpper().toLatin1();
- //   if(strchr("NDSLIMC", ch))
- //     layout += ch;
- // }
- // tree_set_string("theme/titleLayout", layout.constData());
+  for(int i = 0; i < text.length(); ++i) {
+    char ch = text.at(i).toUpper().toLatin1();
+    if(strchr("NDSLIMC", ch))
+      layout += ch;
+  }
+  tree_set_string("theme/titleLayout", layout.constData());
   // FIXME preview_update_set_title_layout(layout);
-//}
+}
 
 void MainDialog::on_font_active_changed() {
   write_font(ui.font_active, "ActiveWindow");
   // FIXME preview_update_set_active_font(write_font(w, "ActiveWindow"));
 }
 
-//void MainDialog::on_font_inactive_changed() {
- // write_font(ui.font_inactive, "InactiveWindow");
+void MainDialog::on_font_inactive_changed() {
+  write_font(ui.font_inactive, "InactiveWindow");
   // FIXME preview_update_set_inactive_font(write_font(w, "InactiveWindow"));
-//}
+}
 
-//void MainDialog::on_font_menu_header_changed() {
-  //write_font(ui.font_menu_header, "MenuHeader");
+void MainDialog::on_font_menu_header_changed() {
+  write_font(ui.font_menu_header, "MenuHeader");
   // FIXME preview_update_set_menu_header_font(write_font(w, "MenuHeader"));
-//}
+}
 
 void MainDialog::on_font_menu_item_changed() {
   write_font(ui.font_menu_item, "MenuItem");
@@ -108,15 +108,15 @@ void MainDialog::on_font_menu_item_changed() {
 }
 
 void MainDialog::on_font_active_display_changed() {
-  write_font(ui.font_active_display, "OSD");
-  // FIXME preview_update_set_osd_active_font(write_font(w, "OSD"));
+  write_font(ui.font_active_display, "ActiveOnScreenDisplay");
+  // FIXME preview_update_set_osd_active_font(write_font(w, "ActiveOnScreenDisplay"));
 }
 
-//void MainDialog::on_font_inactive_display_changed() {
-  //write_font(ui.font_inactive_display, "InactiveOSD");
+void MainDialog::on_font_inactive_display_changed() {
+  write_font(ui.font_inactive_display, "InactiveOnScreenDisplay");
   // FIXME preview_update_set_osd_inactive_font
-  // FIXME (write_font(w, "InactiveOSD"));
-//}
+  // FIXME (write_font(w, "InactiveOnScreenDisplay"));
+}
 
 static RrFont* read_font(Fm::FontButton* button, const gchar* place,
                          gboolean use_default) {

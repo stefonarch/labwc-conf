@@ -54,7 +54,7 @@ lxqt_translate_ts(QM_FILES
   UPDATE_TRANSLATIONS
     ${UPDATE_TRANSLATIONS}
   SOURCES
-    ${obconf-qt_SRCS}
+    ${labwc-conf_SRCS}
     ${obconf-qt_UI_H}
   INSTALL_DIR
     "${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/translations"

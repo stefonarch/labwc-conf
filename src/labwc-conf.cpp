@@ -71,7 +71,7 @@ static void print_version() {
 
 static void print_help() {
   QString output = QObject::tr(
-    "Syntax: labwc.conf [options] [ARCHIVE.obt]\n"
+    "Syntax: obconf [options] [ARCHIVE.obt]\n"
     "\nOptions:\n"
     "  --help                Display this help and exit\n"
     "  --version             Display the version and exit\n"
@@ -190,7 +190,7 @@ int main(int argc, char** argv) {
   app.installTranslator(&qtTranslator);
 
   // install our own tranlations
-  translator.load(QStringLiteral("labwc-conf_") + QLocale::system().name(), QStringLiteral(PACKAGE_DATA_DIR) + QStringLiteral("/translations"));
+  translator.load(QStringLiteral("obconf-qt_") + QLocale::system().name(), QStringLiteral(PACKAGE_DATA_DIR) + QStringLiteral("/translations"));
   app.installTranslator(&translator);
 
   // load configurations
@@ -218,10 +218,10 @@ int main(int argc, char** argv) {
 
   if(!((obc_config_file &&
         obt_xml_load_file(parse_i, obc_config_file, "labwc_config")) ||
-       obt_xml_load_config_file(parse_i, "labwc", "rc.xml",
+       obt_xml_load_config_file(parse_i, "openbox", "rc.xml",
                                 "labwc_config"))) {
     QMessageBox::critical(NULL, QObject::tr("Error"),
-                          QObject::tr("Failed to load an rc.xml. You have probably failed to install labwc properly."));
+                          QObject::tr("Failed to load an rc.xml. You have probably failed to install Openbox properly."));
   }
   else {
     doc = obt_xml_doc(parse_i);
@@ -233,7 +233,7 @@ int main(int argc, char** argv) {
     xmlErrorPtr e = xmlGetLastError();
 
     if(e) {
-      QString message = QObject::tr("Error while parsing the labwc configuration file.  Your configuration file is not valid XML.\n\nMessage: %1")
+      QString message = QObject::tr("Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n\nMessage: %1")
         .arg(QString::fromUtf8(e->message));
       QMessageBox::critical(NULL, QObject::tr("Error"), message);
     }

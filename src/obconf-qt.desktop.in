@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=obconf-qt
+Categories=Qt;Settings;DesktopSettings;
+Icon=obconf-qt
+StartupNotify=true
+
+#TRANSLATIONS_DIR=translations

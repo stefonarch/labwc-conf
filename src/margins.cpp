@@ -34,10 +34,10 @@ extern RrInstance* rrinst; // defined in obconf-qt.cpp
 
 
 void MainDialog::margins_setup_tab() {
-  ui.margins_left->setValue(tree_get_int("margin/left", 0));
-  ui.margins_right->setValue(tree_get_int("margin/right", 0));
-  ui.margins_top->setValue(tree_get_int("margin/top", 0));
-  ui.margins_bottom->setValue(tree_get_int("margin/bottom", 0));
+  ui.margins_left->setValue(tree_get_int("margins/left", 0));
+  ui.margins_right->setValue(tree_get_int("margins/right", 0));
+  ui.margins_top->setValue(tree_get_int("margins/top", 0));
+  ui.margins_bottom->setValue(tree_get_int("margins/bottom", 0));
 }
 
 void MainDialog::on_margins_left_valueChanged(int newValue) {

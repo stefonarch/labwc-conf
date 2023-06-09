@@ -40,8 +40,8 @@ extern RrInstance* rrinst; // defined in obconf-qt.cpp
 
 void MainDialog::windows_setup_tab() {
   gchar* s;
-  ui.focus_new->setChecked(tree_get_bool("focus/focusNew", TRUE)); //not present
-  ui.place_center->setChecked(tree_get_bool("placement/center",TRUE)); // not present
+  ui.focus_new->setChecked(tree_get_bool("focus/focusNew", TRUE));
+  ui.place_center->setChecked(tree_get_bool("placement/center",TRUE));
 
   s = tree_get_string("placement/policy", "Smart");
   ui.place_mouse->setChecked(!g_ascii_strcasecmp(s, "UnderMouse"));
